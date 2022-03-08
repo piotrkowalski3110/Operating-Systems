@@ -10,7 +10,7 @@ int main()
     printf("Podaj PID procesu do zabicia: ");
     scanf("%d",&a);
 
-    kill(a,2);
+    kill(a,15);
 
 
 return 0;
