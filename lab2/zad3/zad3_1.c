@@ -4,12 +4,6 @@
 #include <stdlib.h>
 #include <sys/types.h>
 
-void handler(int sig)
-{
-    printf("\nNumer albumu: 50901\n");
-    exit(1);
-}
-
 int main()
 {
     int a=0;

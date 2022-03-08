@@ -13,7 +13,6 @@ void handler(int sig)
 int main()
 {
     int pid_t = getpid();
-    int x = 0;
     printf("Pid: %d\n", pid_t);
 
     signal(SIGINT, handler);
