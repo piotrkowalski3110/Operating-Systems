@@ -2,11 +2,11 @@
 
 ## ZAD1
 
-#### Napisać program w języku C wypisujący w konsoli tekst "Hello SO" wrazze znakiem nowej linii, a następnie kończący pracę.
+### Napisać program w języku C wypisujący w konsoli tekst "Hello SO" wrazze znakiem nowej linii, a następnie kończący pracę.
 
 ## ZAD2
 
-#### Napisać program w języku C wypisujący w konsoli swój PID (process identifier), a następnie blokujący zamknięcie programu (np. poprzez pętlę nieskończoną, lub oczekiwanie na wprowadzenie znaku z klawiatury). Odnaleźć procesz poziomu konsoli na różne sposoby (poprzez PIDoraz nazwę procesu). Do wyszukiwania procesu można użyć poleceń takich jak: ps, top, etc.
+### Napisać program w języku C wypisujący w konsoli swój PID (process identifier), a następnie blokujący zamknięcie programu (np. poprzez pętlę nieskończoną, lub oczekiwanie na wprowadzenie znaku z klawiatury). Odnaleźć procesz poziomu konsoli na różne sposoby (poprzez PIDoraz nazwę procesu). Do wyszukiwania procesu można użyć poleceń takich jak: ps, top, etc.
 
 ## ZAD3
 
