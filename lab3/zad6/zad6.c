@@ -3,29 +3,27 @@
 #include <signal.h>
 #include <stdlib.h>
 #include <sys/types.h>
-#include <stdbool.h>
 
-bool flaga;
+int flaga = 0;
 
-void sigusr1_handler(int signum) {
-    flaga = true;
+void handler(int signum) {
+    flaga = 1;
 }
 
 int main(void) {
-  signal(SIGUSR1, sigusr1_handler);
+  signal(SIGUSR1, handler);
 
     int pid_t = getpid();
     printf("\nPID: %d\n",pid_t);
 
   for(;;)
   {
-      if(flaga == true)
+      if(flaga == 1)
       {
         printf("Numer albumu: 50901\n");
-        flaga = false;
+        flaga = 0;
       }
       
       sleep(10);
   }
   return 0;
-}
