@@ -2,7 +2,7 @@
 #include <unistd.h>
 
 FILE *stream;
-char line[256];
+char line[20];
 
 int main( void )
 {
@@ -17,7 +17,7 @@ int main( void )
    {
       for(;;)
       {
-         while(fgets(line,256,stdin))
+         while(fgets(line,20,stdin))
          {
             puts(line);
          }
