@@ -8,6 +8,12 @@
         "stat.h": "c",
         "string.h": "c",
         "types.h": "c",
-        "msg.h": "c"
+        "msg.h": "c",
+        "array": "c",
+        "hash_map": "c",
+        "string_view": "c",
+        "initializer_list": "c",
+        "utility": "c",
+        "valarray": "c"
     }
 }
