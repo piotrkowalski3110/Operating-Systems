@@ -29,19 +29,16 @@ int main(int argc, char *argv[]) {
    int spaceavailable;
    shmid = shmget(SHM_KEY, sizeof(struct shmseg), 0644|IPC_CREAT);
    shmp = shmat(shmid, NULL, 0);
+   bufptr = shmp->buf;
+   spaceavailable = BUF_SIZE;
 
    while((getline(&message, &len, stdin)) != -1)
    {
-      bufptr = shmp->buf;
-      spaceavailable = BUF_SIZE;
-
       strcpy(bufptr, message);
       bufptr[spaceavailable-1] = '\0';
-
       shmp->cnt = strlen(bufptr);
-
-      bufptr[spaceavailable-1] = '\0';
       shmp->complete = 0;
+
       printf("Wrote %d bytes\n\n", shmp->cnt);
    }
    shmp->complete = 1;
