@@ -17,6 +17,8 @@ struct shmseg {
    char buf[BUF_SIZE];
 };
 
+void reverse_string(char *);
+
 int main(int argc, char *argv[]) {
    int shmid;
    char *bufptr;
@@ -43,4 +45,21 @@ int main(int argc, char *argv[]) {
    shmdt(shmp);
    shmctl(shmid, IPC_RMID, 0);
    return 0;
+}
+
+void reverse_string(char *str) {
+   int last, limit, first;
+   char temp;
+   last = strlen(str) - 1;
+   limit = last/2;
+   first = 0;
+   
+   while (first < last) {
+      temp = str[first];
+      str[first] = str[last];
+      str[last] = temp;
+      first++;
+      last--;
+   }
+   return;
 }
