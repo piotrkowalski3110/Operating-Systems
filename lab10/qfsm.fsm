@@ -1,0 +1,60 @@
+<?xml version='1.0'?>
+<!DOCTYPE qfsmproject SYSTEM 'qfsm.dtd'>
+<qfsmproject version="0.55" author="Qfsm">
+  <machine nummooreout="8" transfontitalic="0" draw_it="1" statefontsize="8" transfont="Helvetica" statefontitalic="0" author="" description="" version="" name="FSM" arrowtype="1" numbits="3" statefontweight="50" statefont="Helvetica" numin="8" transfontsize="8" transfontweight="50" type="1" numout="8" initialstate="0">
+    <outputnames_moore>s_out7,s_out6,s_out5,s_out4,s_out3,s_out2,s_out1,s_out0</outputnames_moore>
+    <inputnames>i_7,i_6,i_5,i_4,i_3,i_2,i_1,i_0</inputnames>
+    <outputnames>o_7,o_6,o_5,o_4,o_3,o_2,o_1,o_0</outputnames>
+    <itransition ypos="359" endx="169" xpos="109" endy="359"/>
+    <state pencolor="0" exit_actions="" radius="40" description="" finalstate="0" entry_actions="" moore_outputs="" ypos="359" code="0" xpos="209" linewidth="1">State_Start</state>
+    <state pencolor="0" exit_actions="" radius="40" description="" finalstate="0" entry_actions="" moore_outputs="" ypos="358" code="1" xpos="415" linewidth="1">State_Znak</state>
+    <state pencolor="0" exit_actions="" radius="40" description="" finalstate="0" entry_actions="" moore_outputs="" ypos="245" code="2" xpos="639" linewidth="1">State_Imie</state>
+    <state pencolor="0" exit_actions="" radius="40" description="" finalstate="0" entry_actions="" moore_outputs="" ypos="365" code="3" xpos="632" linewidth="1">State_Nazwisko</state>
+    <state pencolor="0" exit_actions="" radius="40" description="" finalstate="0" entry_actions="" moore_outputs="" ypos="499" code="4" xpos="629" linewidth="1">State_Album</state>
+    <state pencolor="0" exit_actions="" radius="40" description="" finalstate="1" entry_actions="" moore_outputs="" ypos="241" code="5" xpos="874" linewidth="1">State_Imie_end</state>
+    <state pencolor="0" exit_actions="" radius="40" description="" finalstate="1" entry_actions="" moore_outputs="" ypos="361" code="6" xpos="880" linewidth="1">State_Nazwisko_end</state>
+    <state pencolor="0" exit_actions="" radius="40" description="" finalstate="1" entry_actions="" moore_outputs="" ypos="496" code="7" xpos="886" linewidth="1">State_Album_end</state>
+    <transition c1x="290,9815929442237" c2y="357,838012522722" c1y="357,676025045444" description="" straight="1" type="1" ypos="357,514037568166" endx="375" xpos="248,9723894163356" endy="358" c2x="332,9907964721119">
+      <from>0</from>
+      <to>1</to>
+      <inputs default="0" any="0" invert="0">:</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="501,5496953967922" c2y="288,5870369195583" c1y="314,2855300191182" description="" straight="1" type="1" ypos="339,9840231186782" endx="603,2229123600034" xpos="450,7130869151866" endy="262,8885438199983" c2x="552,3863038783978">
+      <from>1</from>
+      <to>2</to>
+      <inputs default="0" any="0" invert="0">I</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="500,7477785358997" c2y="359,9193447036546" c1y="359,6044982320465" description="" straight="1" type="1" ypos="359,2896517604383" endx="592,2849264605231" xpos="454,979204573588" endy="360,2341911752628" c2x="546,5163524982114">
+      <from>1</from>
+      <to>3</to>
+      <inputs default="0" any="0" invert="0">N</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="495,4960959923719" c2y="454,4215017904708" c1y="417,214544982949" description="" straight="1" type="1" ypos="380,0075881754273" endx="589,6851125226272" xpos="448,4015877272442" endy="491,6284585979926" c2x="542,5906042574995">
+      <from>1</from>
+      <to>4</to>
+      <inputs default="0" any="0" invert="0">A</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="730,6726555260196" c2y="243,1312991040795" c1y="243,7252733241108" description="" straight="1" type="1" ypos="244,319247544142" endx="834,0295530147474" xpos="678,9942067816557" endy="242,5373248840482" c2x="782,3511042703835">
+      <from>2</from>
+      <to>5</to>
+      <inputs default="0" any="0" invert="0">a-Z</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="727,9965320675234" c2y="362,1183075370899" c1y="363,2366150741797" description="" straight="1" type="1" ypos="364,3549226112696" endx="840" xpos="671,994798101285" endy="361" c2x="783,9982660337616">
+      <from>3</from>
+      <to>6</to>
+      <inputs default="0" any="0" invert="0">a-Z</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="728,0211917103629" c2y="498,4102891650261" c1y="498,4716974519933" description="" straight="1" type="1" ypos="498,5331057389606" endx="846,0690250730001" xpos="668,9972750290443" endy="498,3488808780588" c2x="787,0451083916815">
+      <from>4</from>
+      <to>7</to>
+      <inputs default="0" any="0" invert="0">0-9</inputs>
+      <outputs></outputs>
+    </transition>
+  </machine>
+</qfsmproject>
